@@ -79,13 +79,196 @@ nav {
 }
 
 #menu-icon {
-    display: hidden;
+    visibility: hidden;
     width: 40px;
     height: 40px;
-    background: pink;
+    background: url("../images/hamb.svg") center;
 
 }
 
-a:hover#menu-icon {
-    
+ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #2F2E33;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: #3A5199;
+}
+
+.current {
+    color: #3A5199;
+}
+
+/* ---------- END OF NAVIGATION -----------*/
+
+.banner {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.banner-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.first-fourth {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.second-fourth {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.third-fourth {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.fourth-fourth {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+#html {
+    background-color: #D5D6D2;
+}
+
+#css {
+    background-color: #3A5199;
+}
+
+#javascript {
+    background-color: #D5D6D2;
+}
+
+#react {
+    background-color: #3A5199;
+}
+
+.first-fourth i {
+    color: red;
+/* 1:13 -----------------------*/
+}
+
+.inner-wrapper {
+    float: left;
+}
+
+#snake {
+    background-color: #3A5199;
+}
+
+#to-do-list {
+    background-color: #D5D6D2;
+}
+
+#quote-machine {
+    background-color: #FFFFFF;
+}
+
+aside {
+    float: right;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.inner-wrapper-2 {
+    float: left;
+    width: 100%;
+    background-color: red;
+}
+
+.clearfix {
+    clear: both;
+}
+/* ---------- FOOTER -----------*/
+
+footer {
+    background-color: white;
+    width: 100%;
+
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 460px;
+    margin: 1%;
+}
+
+/*----- 1:32 -----*/
+
+/* ---------- MEDIA -----------*/
+
+@media screen and (max-width: 760px) {
+    h2 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 125%;
+    }
+    p {
+        font-size: 120%;
+
+    }
+
+    header {
+        position: absolute;
+    }
+
+    #logo {
+        margin: 15px 0 20px -25px;
+    }
+
+    #menu-icon {
+        display: inline-block;
+        visibility: visible;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: deepskyblue;
+        right: 20px;
+        top: 60px;
+        border: 1px solid #FFFFFF;
+        width: 50%;
+        }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+    }
 }
